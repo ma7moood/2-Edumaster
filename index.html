@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+	<html lang="en">
+		<head>
+			<meta charset="utf-8">
+			<meta http-equiv="X-UA-Compatible" content="IE=edge">
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<title>Edumaster</title>
+			<link rel="stylesheet" href="css/font-awesome.min.css">
+			<link rel="stylesheet" href="css/bootstrap.min.css">
+			<style type="text/css">
+
+			.navbar {margin-bottom: 0 ; border-radius: 0 ; width: 100%}
+			.navbar-inverse .navbar-brand , .navbar-inverse .navbar-nav>li>a{color: #fff }
+			.navbar-inverse .navbar-form input {height: 30px ; background-color: rgba(2,2,2,0.2);border-color: #000 ; width: 240px}
+			.btn-default { background-color: rgba(2,2,2,0.0);border-color: #000; height: 30px ;padding: 0px 15px ; color: #ccc}
+
+			.the-frist {width: 100%; height: 600px ; background : url(img/nav.jpg) no-repeat center center  ;-wibkit-background-size:cover ;-moz-background-size:cover ;-o-background-size:cover ;background-size:cover ;margin: 0}
+			.the-frist .row {margin-right: 0 ; margin-left: 0}
+			.the-frist .container-2 {background: rgba(54,72,88,0.6); min-height: 600px}
+			.the-frist .container-2 .col-xs-12 {margin-top: 250px ; color:#fff}
+			.the-frist .container-2 .col-xs-12 h1 {font-size: 55px}
+			.the-frist .container-2 .col-xs-12 button {background-color: rgba(54,72,88,0.6); border-radius: 10px ; border-color: rgba(54,72,88,0.1) ;padding: 5px; margin-right: 20px ; width: 155px}
+
+			.the-scound .container-3 .row {margin-right: 0 ; margin-left: 0}
+			.the-scound .container-3 .row .col-lg-3 { padding-top: 20px ; border-right: 1px solid #000 ; padding-bottom: 20px ; background-color:#F4F9F4}
+			.the-scound .container-3 h3 {font-weight: bold ; color:#364857}
+			.the-scound .container-3 img {width: 70px ; height: 70px; }
+			.the-scound .container-3 i {color:#364857}
+
+			.the-third .container-4 .row {margin-right: 0 ; margin-left: 0}
+			.the-third .slide {margin-top: 20px}
+			.the-third {background: url(img/bakgrod.jpg);height: 395px ; width: 100% ;-wibkit-background-size:cover ;-moz-background-size:cover ;-o-background-size:cover ;background-size:cover}
+			.the-third .slide > div {height: 70px ; width: 70px ; border-radius: 50px ; border : 1px solid #364857 ; margin: auto; padding:25px 0px 0px 0px; background-color: #e9ebee00 ; color: #fff }
+			.slide .n-1 {left: -500px ; position: absolute;}
+			.slide .n-2 {left: -500px ; position: absolute;}
+			.slide .n-3 {left: -500px ; position: absolute;}
+			.slide .n-4 {left: -500px ; position: absolute;}
+			.slide .n-5 {left: -500px ; position: absolute;}
+			.slide .n-6 {left: -500px ; position: absolute;}
+			.slide .n-7 {left: -500px ; position: absolute;}
+			.slide .n-8 {left: -500px ; position: absolute;}
+			.the-third .follow .carousel-inner {height: 350px ; width: 644px ;padding: 0 ;border-radius: 20px }
+			.the-third .follow .carousel-inner .item .carousel-caption{height: 395px ; width: 100% ; background-color: rgba(0,0,0,0.4);left: 0 ; }
+			.the-third .follow .carousel-caption button {background-color: rgba(54,72,88,0.8); border-radius: 10px ; border-color: rgba(54,72,88,0.1) ;padding: 5px; margin-right: 20px ; width: 155px}
+			.the-third .follow .carousel-caption { padding-top: 100px }
+
+			.the-fours {background-color: #ccc}
+			.the-fours .container-5 .row {margin-right: 0 ;margin-left: 0}
+			.the-fours img {width: 200px ; height: 200px}
+			.the-fours .repeat {height:  110px ; background-color: #000 ; color: #fff ;
+				padding: 20px ; }
+			.the-fours .repeat button {background-color: rgba(54,72,88,0.8); border-radius: 10px ; border-color: rgba(54,72,88,0.1) ;padding: 5px; margin-right: 20px ; width: 155px}
+
+			.the-fifth {height: 300px}
+			.the-fifth .container-6 .row {margin-right: 0 ; margin-left: 0}
+			.the-fifth .online {background: url(img/bakgrod-div-recust.jpg); -wibkit-background-size:cover;-moz-background-size:cover ;-o-background-size:cover;background-size:cover ; min-height: 300px ; padding-top: 100px; color: #000}
+			.the-fifth .online button {background-color: rgba(54,72,88,0.8); border-radius: 10px ; border-color: rgba(54,72,88,0.1)  ; width: 155px ; display: block; margin:auto; color: #fff}
+			.the-fifth .online input {margin-bottom: 10px ;border-radius:5px; border-color: rgba(54,72,88,0.1)  }
+			.the-fifth .line {padding-top: 60px ; background-color: rgba(43,58,70,1) ; color: #000 ;min-height: 300px }
+			.the-fifth .line h2 {margin-bottom: 20px}
+			.the-fifth .line p {width: 100px ; height: 100px ;border :1px solid #364857; background-color:#e9ebee00 ; color: #fff ;display: inline-block ; font-size: 34px}
+			.the-fifth .line span { color: #000 ; margin: auto;font-size: 25px}
+
+			.the-sex {height: 250px ; background: url(img/bakgrod.jpg); color: #fff ; -wibkit-background-size:cover;-moz-background-size:cover ;-o-background-size:cover;background-size:cover ; padding-top: 20px ; padding-bottom: 20px}
+			.the-sex .container-7 .row {margin-right: 0 ; margin-left: 0}
+			.the-sex li , .the-sex a:focus,.the-sex a:hover ,.the-sex a { ; margin-top: 30px ; color: #fff}
+			.the-sex p {border:4px solid #2b3a46;color: #fff; padding: 10px ; width: 125px ; margin: 75px 0px 75px 149px ;}
+			.the-sex .face li {display: inline; margin-left: 20px}
+			.the-sex .face {padding-top: 95px}
+
+
+			.last {height:  50px ;  background-color: #000 ; padding: 10px }
+			.last li {display: inline; margin-left: 10px }
+			.last p {margin: -20px 0 10px;  color:rgba(43,58,70,1) }
+			.last li , .last a:focus,.last a:hover ,.last a {color:rgba(43,58,70,1) }
+
+
+			</style>
+		</head>
+		<body>
+
+			<nav class="navbar navbar-inverse">
+			  <div class="container-fluid">
+			    <!-- Brand and toggle get grouped for better mobile display -->
+			    <div class="navbar-header">
+			      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+			        <span class="sr-only">Toggle navigation</span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			      </button>
+			      <a class="navbar-brand" href="#"><i class="fa fa-ravelry" aria-hidden="true"></i> Edumaster</a>
+			    </div>
+			      <form class="navbar-form navbar-right">
+			        <div class="form-group">
+			          <input type="text" class="form-control" placeholder="What do you want to learn ?">
+			        </div>
+			        <button type="submit" class="btn btn-default"><i class="fa fa-search" aria-hidden="true"></i></button>
+			      </form>
+			      <ul class="nav navbar-nav navbar-right">
+			        <li class="dropdown">
+			          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Courses <span class="caret"></span></a>
+			          <ul class="dropdown-menu">
+			            <li><a href="#">HTML</a></li>
+			            <li><a href="#">CSS</a></li>
+			            <li><a href="#">HTML 5</a></li>			          
+			            <li><a href="#">CSS 3</a></li>
+				        <li><a href="#">Bootstrap</a></li>
+				        <li><a href="#">jQuary</a></li>
+				        <li><a href="#">JavaScript</a></li>
+				        <li><a href="#">PHP</a></li>
+			          </ul>
+			        </li>
+			        <li><a href="#">Individual</a></li>
+			        <li><a href="#">Business</a></li>
+			        <li><a href="#">About Us</a></li>
+			        <li><a href="#">Contact Us</a></li>
+			      </ul>
+			    </div><!-- /.navbar-collapse -->
+			  </div><!-- /.container-fluid -->
+			</nav>
+
+
+
+			<section class="the-frist text-center">
+				<div class="container-2">
+					<div class="row">
+						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+							<h3>Free Online Courses</h3>
+							<p class="lead">Advance Your career. Improve Your life.</p>
+							<button>Join for free</button>
+							<button>See courses</button>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+
+			<section class="the-scound text-center">
+				<div class="container-3">
+					<div class="row">
+						<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+							<img src="img/mysql-e0720d7b98.png">
+							<h3>My SQL</h3>
+							<p><i class="fa fa-get-pocket" aria-hidden="true"></i> Get Your Skill IQ</p>
+						</div>
+						<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+							<img src="img/python-7be70baaac.png">
+							<h3>Python</h3>
+							<p><i class="fa fa-get-pocket" aria-hidden="true"></i> Get Your Skill IQ</p>
+						</div>
+						<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+							<img src="img/csharp-e7b8fcd4ce.png">
+							<h3>C#</h3>
+							<p><i class="fa fa-get-pocket" aria-hidden="true"></i> Get Your Skill IQ</p>
+						</div>
+						<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+							<img src="img/html5-7ac65c8ec0.png">
+							<h3>HTML 5</h3>
+							<p><i class="fa fa-get-pocket" aria-hidden="true"></i> Get Your Skill IQ</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+
+
+			<section class="the-third text-center">
+				<div class="container-4">
+					<div class="row">
+						<div class="col-lg-6 col-xs-12">
+							<div class="slide">
+								<div class="n-1 active">HTML</div>
+								<div class="n-2">CSS</div>
+								<div class="n-3">HTML 5</div>
+								<div class="n-4">CSS 3</div>
+								<div class="n-5">Bootstrap</div>
+								<div class="n-6">jQuary</div>
+								<div class="n-7">JavaScript</div>
+								<div class="n-8">PHP</div>
+							</div>
+						</div>
+
+						<div class="follow col-lg-6 col-xs-12">
+							<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+							  <!-- Wrapper for slides -->
+							  <div class="carousel-inner" role="listbox">
+							    <div class="item active">
+							      <img src="img/slide-1.jpg">
+							      <div class="carousel-caption">
+							        <h2>Individual</h2>
+							        <p class="lead">Take your skills to the next level with courses on the most popular programming languages, developer tools</p>
+							        <button>See All Features</button>
+							        <button>Srart For Free</button>
+							      </div>
+							    </div>
+							    <div class="item">
+							      <img src="img/slide-2.jpg">
+							      <div class="carousel-caption">
+							       <h2>Small Business</h2>
+							        <p class="lead">Take your skills to the next level with courses on the most popular programming languages, developer tools</p>
+							        <button>See All Features</button>
+							        <button>Srart For Free</button> 
+							      </div>
+							    </div>
+							     <div class="item">
+							      <img src="img/slide-3.jpg">
+							      <div class="carousel-caption">
+							     	<h2>Enterprise</h2>
+							        <p class="lead">Take your skills to the next level with courses on the most popular programming languages, developer tools</p>
+							        <button>See All Features</button>
+							        <button>Srart For Free</button>
+							      </div>
+							    </div>
+							  </div>
+							  <!-- Controls -->
+							  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+							    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+							    <span class="sr-only">Previous</span>
+							  </a>
+							  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+							    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+							    <span class="sr-only">Next</span>
+							  </a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+			<section class="the-fours text-center">
+				<div class="container-5">
+					<div class="row">
+						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+							<h1>Helping thousands of organizations transform at scale.</h1>
+							<img src="img/att@3x.png">
+							<img src="img/gamestop2.png">
+							<img src="img/disney@3x.png">
+							<img src="img/adp@3x.png">
+							<img src="img/vmware@3x.png">
+							<img src="img/tableau@3x.png">
+						</div>
+						<div class="repeat col-lg-12 col-md-12 col-sm-12 col-xs-12">
+							<h4>Test your skills. Learn something new. Get help. Repeat.</h4>
+							<button>Learn For Free</button>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="the-fifth text-center">
+				<div class="container-6">
+					<div class="row">
+						<div class="online col-lg-6 col-md-6 col-sm-12 col-xs-12">
+							<h2>ONLINE COURSE FOR FREE</h2>
+							<p>Take your skills to the next level with courses on the most popular programming languages, developer tools Take your skills to the next level</p>
+							<input type="text" placeholder="type your E-mail">
+							<input type="text" placeholder="contact number">
+							<button>Send Request</button>
+						</div>
+
+						<div class="line col-lg-6 col-md-6 col-sm-12 col-xs-12">
+							<h2>LAUNCHING SOON</h2>
+							<p>02<br><span>Months</span></p>
+							<p>28<br><span>Days</span></p>
+							<p>11<br><span>Hours</span></p>
+							<p>45<br><span>Minutes</span></p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+
+			<section class="the-sex text-center">
+				<div class="container-7">
+					<div class="row">
+						<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+							<ul class="list-unstyled">
+							<li><a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i> Hello@fengo.com</a></li>
+							<li><a href="#"><i class="fa fa-phone" aria-hidden="true"></i> phone:222111333</a></li>
+							<li><a href="#"><i class="fa fa-fax" aria-hidden="true"></i> fax:222111333</a></li>
+							<li><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i> 99 Brand st -suite 22 USA</a></li>
+						</ul>
+						</div>
+
+						<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+							<p class="lead">Edumaster</p>
+						</div>
+
+						<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">					<ul class="face list-unstyled">
+								<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+								<li><a href="#"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+								<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+								<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+								<li><a href="#"><i class="fa fa-skype" aria-hidden="true"></i></a></li>
+								<li><a href="#"><i class="fa fa-wordpress" aria-hidden="true"></i></a></li>
+								<li><a href="#"></a><i class="fa fa-windows" aria-hidden="true"></i></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+ 
+					<div class="last">
+						<ul class="list-unstyled">
+							<li><a href="">HOME </a></li>
+							<li><a href="">ABOUT </a></li>
+							<li><a href="">SERVICE </a></li>
+							<li><a href="">CONTACT </a></li>
+							<li><a href="">SITE MAP</a></li>
+						</ul>
+						<p class="ds2-main-footer--copyright text-right">© EDUMASTER</p>
+					</div>
+
+
+
+
+
+
+
+
+			<script src="js/jquery-3.2.1.min.js"></script>
+			<script src="js/bootstrap.min.js"></script>
+			<script src="js/blugen.js"></script>
+			<script src="js/jquery.nicescroll.min.js"></script>	
+			<script>$("html").niceScroll();</script>	
+
+		</body>
+	</html>
